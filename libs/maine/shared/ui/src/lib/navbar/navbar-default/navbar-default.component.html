@@ -1,0 +1,83 @@
+<nav class="navbarDefault">
+  <div class="custom-grid-layout">
+    <div class="navbarDefault__container">
+      <a
+        class="navbarDefault__logo"
+        [routerLink]="navbarDefaultConfig.navbarDefaultLogo.logoUrl"
+      >
+        <svg width="90" height="25" class="icon">
+          <use
+            [attr.xlink:href]="navbarDefaultConfig.navbarDefaultLogo.logoPath"
+          ></use>
+        </svg>
+      </a>
+
+      <ul role="list" class="navbarDefault__link-container">
+        @for(item of navbarDefaultConfig.navbarDefaultLinkList; track
+        item.linkText ){
+        <li class="navbarDefault__link-item">
+          <a class="navbarDefault__link cta-2" [routerLink]="item.linkUrl">{{
+            item.linkText
+          }}</a>
+        </li>
+        }
+      </ul>
+
+      <div class="navbarDefault__content-end">
+        @if(navbarDefaultConfig.navbarDefaultContentEnd.showModeSwitcher){
+        <button
+          class="navbarDefault__mode-switcher button--icon"
+          (click)="onToggleMode()"
+        >
+          <svg width="24" height="24" class="icon">
+            <use
+              [attr.xlink:href]="
+                isDarkMode
+                  ? 'siera-assets/svgs/icon/sprite.svg#sun'
+                  : 'siera-assets/svgs/icon/sprite.svg#moon'
+              "
+            ></use>
+          </svg></button
+        >} @if(navbarDefaultConfig.navbarDefaultContentEnd.showAllWebsites){
+        <a routerLink="/all-websites" class="navbarDefault__all-websites">
+          <svg width="24" height="24" class="icon">
+            <use
+              [attr.xlink:href]="'siera-assets/svgs/icon/sprite.svg#world'"
+            ></use>
+          </svg>
+          <span class="navbarDefault__all-websites-text cta-2"
+            >All Websites</span
+          >
+        </a>
+        }
+        <button class="navbarDefault__search button--icon">
+          <svg width="24" height="24" class="icon">
+            <use
+              [attr.xlink:href]="'siera-assets/svgs/icon/sprite.svg#search'"
+            ></use>
+          </svg>
+        </button>
+        <label class="hamburger-menu">
+          <input type="checkbox" #menuCheckbox />
+        </label>
+        <aside class="navbarDefault__mobile-menu">
+          <nav>
+            <ul role="list" class="navbarDefault__mobile-link-container">
+              @for(item of navbarDefaultConfig.navbarDefaultLinkList; track
+              item.linkText ){
+              <li class="navbarDefault__link-item">
+                <a
+                  class="navbarDefault__link cta-2"
+                  [routerLink]="item.linkUrl"
+                  (click)="onClickMobileNavLink()"
+                  >{{ item.linkText }}</a
+                >
+              </li>
+              }
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </div>
+</nav>

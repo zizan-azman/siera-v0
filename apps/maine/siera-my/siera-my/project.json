@@ -1,0 +1,95 @@
+{
+  "name": "siera-my",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/maine/siera-my/siera-my/src",
+  "tags": ["scope:siera", "type:app"],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/maine/siera-my/siera-my",
+        "index": "apps/maine/siera-my/siera-my/src/index.html",
+        "browser": "apps/maine/siera-my/siera-my/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/maine/siera-my/siera-my/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/maine/siera-my/siera-my/public"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/maine/shared/assets",
+            "output": "siera-assets"
+          }
+        ],
+        "styles": ["apps/maine/siera-my/siera-my/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "siera-my:build:production"
+        },
+        "development": {
+          "buildTarget": "siera-my:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "siera-my:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/maine/siera-my/siera-my/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "siera-my:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/maine/siera-my/siera-my/browser",
+        "spa": true
+      }
+    }
+  }
+}

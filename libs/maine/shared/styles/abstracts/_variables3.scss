@@ -1,0 +1,38 @@
+// HEX
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #0d0700;
+    --background: #fffaf4;
+    --primary: #fc740b;
+    --secondary: #adfd70;
+    --accent: #5ffd3d;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fff8f0;
+    --background: #0a0600;
+    --primary: #f26a02;
+    --secondary: #3e8d02;
+    --accent: #25c002;
+  }
+}
+// HSL
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: hsl(32, 100%, 3%);
+    --background: hsl(33, 100%, 98%);
+    --primary: hsl(26, 98%, 52%);
+    --secondary: hsl(94, 97%, 72%);
+    --accent: hsl(109, 98%, 62%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: hsl(32, 100%, 97%);
+    --background: hsl(36, 100%, 2%);
+    --primary: hsl(26, 98%, 48%);
+    --secondary: hsl(94, 97%, 28%);
+    --accent: hsl(109, 98%, 38%);
+  }
+}

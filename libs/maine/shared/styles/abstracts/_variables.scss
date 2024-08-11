@@ -1,0 +1,311 @@
+// Shades of Black & White
+$color-hex-base-white: #ffffff;
+$color-hex-base-black: #222222;
+// Shades of Slate
+$color-hex-slate-950: #020617;
+$color-hex-slate-900: #0f172a;
+$color-hex-slate-800: #1e293b;
+$color-hex-slate-700: #334155;
+$color-hex-slate-600: #475569;
+$color-hex-slate-500: #64748b;
+$color-hex-slate-400: #94a3b8;
+$color-hex-slate-300: #cbd5e1;
+$color-hex-slate-200: #e2e8f0;
+$color-hex-slate-100: #f1f5f9;
+$color-hex-slate-50: #f8fafc;
+// Shades of Gray
+$color-hex-gray-900: #384956;
+$color-hex-gray-700: #6c7680;
+$color-hex-gray-500: #c4c8cc;
+$color-hex-gray-200: #d8dbdd;
+$color-hex-gray-100: #ebedee;
+$color-hex-gray-50: #f5f6f7;
+// Shades of Warm Gray
+$color-hex-warmgray-900: #b7ada5;
+$color-hex-warmgray-700: #c9c1bb;
+$color-hex-warmgray-500: #d8d1ca;
+$color-hex-warmgray-200: #edeae8;
+$color-hex-warmgray-100: #f8f7f6;
+// Shades of Teal
+$color-hex-teal-950: #042f2e;
+$color-hex-teal-900: #134e4a;
+$color-hex-teal-800: #115e59;
+$color-hex-teal-700: #0f766e;
+$color-hex-teal-600: #0d9488;
+$color-hex-teal-500: #14b8a6;
+$color-hex-teal-400: #2dd4bf;
+$color-hex-teal-300: #5eead4;
+$color-hex-teal-200: #99f6e4;
+$color-hex-teal-100: #ccfbf1;
+$color-hex-teal-50: #f0fdfa;
+// Shades of Orange
+$color-hex-orange-700: #9a2d3f;
+$color-hex-orange-600: #c54832;
+$color-hex-orange-500: #f06225;
+$color-hex-orange-400: #ff8a00;
+$color-hex-orange-300: #ffa532;
+$color-hex-orange-200: #ffc171;
+$color-hex-orange-100: #ffd9b3;
+// Shades of Amber
+$color-hex-amber-950: #451a03;
+$color-hex-amber-900: #78350f;
+$color-hex-amber-800: #92400e;
+$color-hex-amber-700: #b45309;
+$color-hex-amber-600: #d97706;
+$color-hex-amber-500: #f59e0b;
+$color-hex-amber-400: #fbbf24;
+$color-hex-amber-300: #fcd34d;
+$color-hex-amber-200: #fde68a;
+$color-hex-amber-100: #fef3c7;
+$color-hex-amber-50: #fffbeb;
+// Shades of Yellow
+$color-hex-yellow-950: #422006;
+$color-hex-yellow-900: #713f12;
+$color-hex-yellow-800: #854d0e;
+$color-hex-yellow-700: #a16207;
+$color-hex-yellow-600: #ca8a04;
+$color-hex-yellow-500: #eab308;
+$color-hex-yellow-400: #facc15;
+$color-hex-yellow-300: #fde047;
+$color-hex-yellow-200: #fef08a;
+$color-hex-yellow-100: #fef9c3;
+$color-hex-yellow-50: #fefce8;
+// Shades of Blue
+$color-hex-blue-950: #172554;
+$color-hex-blue-900: #1e3a8a;
+$color-hex-blue-800: #1e40af;
+$color-hex-blue-700: #1d4ed8;
+$color-hex-blue-600: #2563eb;
+$color-hex-blue-500: #3b82f6;
+$color-hex-blue-400: #60a5fa;
+$color-hex-blue-300: #93c5fd;
+$color-hex-blue-200: #bfdbfe;
+$color-hex-blue-100: #dbeafe;
+$color-hex-blue-50: #eff6ff;
+// Shades of Purple
+$color-hex-purple-950: #3b0764;
+$color-hex-purple-900: #581c87;
+$color-hex-purple-800: #6b21a8;
+$color-hex-purple-700: #7e22ce;
+$color-hex-purple-600: #9333ea;
+$color-hex-purple-500: #a855f7;
+$color-hex-purple-400: #c084fc;
+$color-hex-purple-300: #d8b4fe;
+$color-hex-purple-200: #e9d5ff;
+$color-hex-purple-100: #f3e8ff;
+$color-hex-purple-50: #faf5ff;
+
+// Shades of RGB Black & White
+$color-rgb-base-white: 255, 255, 255;
+$color-rgb-base-black: 34, 34, 34;
+// Shades of RGB Slate
+$color-rgb-slate-950: 2, 6, 23;
+$color-rgb-slate-900: 15, 23, 42;
+$color-rgb-slate-800: 30, 41, 59;
+$color-rgb-slate-700: 51, 65, 85;
+$color-rgb-slate-600: 71, 85, 105;
+$color-rgb-slate-500: 100, 116, 139;
+$color-rgb-slate-400: 148, 163, 184;
+$color-rgb-slate-300: 203, 213, 225;
+$color-rgb-slate-200: 226, 232, 240;
+$color-rgb-slate-100: 241, 245, 249;
+$color-rgb-slate-50: 248, 250, 252;
+// Shades of RGB Gray
+$color-rgb-gray-900: 56, 73, 86;
+$color-rgb-gray-700: 108, 118, 128;
+$color-rgb-gray-500: 196, 200, 204;
+$color-rgb-gray-200: 216, 219, 221;
+$color-rgb-gray-100: 235, 237, 238;
+$color-rgb-gray-50: 245, 246, 247;
+// Shades of RGB Warm Gray
+$color-rgb-warmgray-900: 183, 173, 165;
+$color-rgb-warmgray-700: 201, 193, 187;
+$color-rgb-warmgray-500: 216, 209, 202;
+$color-rgb-warmgray-200: 237, 234, 232;
+$color-rgb-warmgray-100: 248, 247, 246;
+// Shades of RGB Teal
+$color-rgb-teal-950: 4, 47, 46;
+$color-rgb-teal-900: 19, 78, 74;
+$color-rgb-teal-800: 17, 94, 89;
+$color-rgb-teal-700: 15, 118, 110;
+$color-rgb-teal-600: 13, 148, 136;
+$color-rgb-teal-500: 20, 184, 166;
+$color-rgb-teal-400: 45, 212, 191;
+$color-rgb-teal-300: 94, 234, 212;
+$color-rgb-teal-200: 153, 246, 228;
+$color-rgb-teal-100: 204, 251, 241;
+$color-rgb-teal-50: 240, 253, 250;
+// Shades of RGB Amber
+$color-rgb-amber-950: 69, 26, 3;
+$color-rgb-amber-900: 120, 53, 15;
+$color-rgb-amber-800: 146, 64, 14;
+$color-rgb-amber-700: 180, 83, 9;
+$color-rgb-amber-600: 217, 119, 6;
+$color-rgb-amber-500: 245, 158, 11;
+$color-rgb-amber-400: 251, 191, 36;
+$color-rgb-amber-300: 252, 211, 77;
+$color-rgb-amber-200: 253, 230, 138;
+$color-rgb-amber-100: 254, 243, 199;
+$color-rgb-amber-50: 255, 251, 235;
+// Shades of RGB Yellow
+$color-rgb-yellow-950: 66, 32, 6;
+$color-rgb-yellow-900: 113, 63, 18;
+$color-rgb-yellow-800: 133, 77, 14;
+$color-rgb-yellow-700: 161, 98, 7;
+$color-rgb-yellow-600: 202, 138, 4;
+$color-rgb-yellow-500: 234, 179, 8;
+$color-rgb-yellow-400: 250, 204, 21;
+$color-rgb-yellow-300: 253, 224, 71;
+$color-rgb-yellow-200: 254, 240, 138;
+$color-rgb-yellow-100: 254, 249, 195;
+$color-rgb-yellow-50: 254, 252, 232;
+// Shades of RGB Blue
+$color-rgb-blue-950: 23, 37, 84;
+$color-rgb-blue-900: 30, 58, 138;
+$color-rgb-blue-800: 30, 64, 175;
+$color-rgb-blue-700: 29, 78, 216;
+$color-rgb-blue-600: 37, 99, 235;
+$color-rgb-blue-500: 59, 130, 246;
+$color-rgb-blue-400: 96, 165, 250;
+$color-rgb-blue-300: 147, 197, 253;
+$color-rgb-blue-200: 191, 219, 254;
+$color-rgb-blue-100: 219, 234, 254;
+$color-rgb-blue-50: 239, 246, 255;
+// Shades of RGB Purple
+$color-rgb-purple-950: 59, 7, 100;
+$color-rgb-purple-900: 88, 28, 135;
+$color-rgb-purple-800: 107, 33, 168;
+$color-rgb-purple-700: 126, 34, 206;
+$color-rgb-purple-600: 147, 51, 234;
+$color-rgb-purple-500: 168, 85, 247;
+$color-rgb-purple-400: 192, 132, 252;
+$color-rgb-purple-300: 216, 180, 254;
+$color-rgb-purple-200: 233, 213, 255;
+$color-rgb-purple-100: 243, 232, 255;
+$color-rgb-purple-50: 250, 245, 255;
+
+// Shades of RGBA Black & White
+$color-rgba-base-white: rgba(255, 255, 255, 1);
+$color-rgba-base-black: rgba(34, 34, 34, 1);
+// Shades of RGBA Slate
+$color-rgba-slate-950: rgba(2, 6, 23, 1);
+$color-rgba-slate-900: rgba(15, 23, 42, 1);
+$color-rgba-slate-800: rgba(30, 41, 59, 1);
+$color-rgba-slate-700: rgba(51, 65, 85, 1);
+$color-rgba-slate-600: rgba(71, 85, 105, 1);
+$color-rgba-slate-500: rgba(100, 116, 139, 1);
+$color-rgba-slate-400: rgba(148, 163, 184, 1);
+$color-rgba-slate-300: rgba(203, 213, 225, 1);
+$color-rgba-slate-200: rgba(226, 232, 240, 1);
+$color-rgba-slate-100: rgba(241, 245, 249, 1);
+$color-rgba-slate-50: rgba(248, 250, 252, 1);
+// Shades of RGBA Gray
+$color-rgba-gray-900: rgba(56, 73, 86, 1);
+$color-rgba-gray-700: rgba(108, 118, 128, 1);
+$color-rgba-gray-500: rgba(196, 200, 204, 1);
+$color-rgba-gray-200: rgba(216, 219, 221, 1);
+$color-rgba-gray-100: rgba(235, 237, 238, 1);
+$color-rgba-gray-50: rgba(245, 246, 247, 1);
+// Shades of RGBA Warm Gray
+$color-rgba-warmgray-900: rgba(183, 173, 165, 1);
+$color-rgba-warmgray-700: rgba(201, 193, 187, 1);
+$color-rgba-warmgray-500: rgba(216, 209, 202, 1);
+$color-rgba-warmgray-200: rgba(237, 234, 232, 1);
+$color-rgba-warmgray-100: rgba(248, 247, 246, 1);
+// Shades of RGBA Teal
+$color-rgba-teal-950: rgba(4, 47, 46, 1);
+$color-rgba-teal-900: rgba(19, 78, 74, 1);
+$color-rgba-teal-800: rgba(17, 94, 89, 1);
+$color-rgba-teal-700: rgba(15, 118, 110, 1);
+$color-rgba-teal-600: rgba(13, 148, 136, 1);
+$color-rgba-teal-500: rgba(20, 184, 166, 1);
+$color-rgba-teal-400: rgba(45, 212, 191, 1);
+$color-rgba-teal-300: rgba(94, 234, 212, 1);
+$color-rgba-teal-200: rgba(153, 246, 228, 1);
+$color-rgba-teal-100: rgba(204, 251, 241, 1);
+$color-rgba-teal-50: rgba(240, 253, 250, 1);
+// Shades of RGBA Orange
+$color-rgba-orange-700: rgba(154, 45, 63, 1);
+$color-rgba-orange-600: rgba(197, 72, 50, 1);
+$color-rgba-orange-500: rgba(240, 98, 37, 1);
+$color-rgba-orange-400: rgba(255, 138, 0, 1);
+$color-rgba-orange-300: rgba(255, 165, 50, 1);
+$color-rgba-orange-200: rgba(255, 193, 113, 1);
+$color-rgba-orange-100: rgba(255, 217, 179, 1);
+// Shades of RGBA Amber
+$color-rgba-amber-950: rgba(69, 26, 3, 1);
+$color-rgba-amber-900: rgba(120, 53, 15, 1);
+$color-rgba-amber-800: rgba(146, 64, 14, 1);
+$color-rgba-amber-700: rgba(180, 83, 9, 1);
+$color-rgba-amber-600: rgba(217, 119, 6, 1);
+$color-rgba-amber-500: rgba(245, 158, 11, 1);
+$color-rgba-amber-400: rgba(251, 191, 36, 1);
+$color-rgba-amber-300: rgba(252, 211, 77, 1);
+$color-rgba-amber-200: rgba(253, 230, 138, 1);
+$color-rgba-amber-100: rgba(254, 243, 199, 1);
+$color-rgba-amber-50: rgba(255, 251, 235, 1);
+// Shades of RGBA Yellow
+$color-rgba-yellow-950: rgba(66, 32, 6, 1);
+$color-rgba-yellow-900: rgba(113, 63, 18, 1);
+$color-rgba-yellow-800: rgba(133, 77, 14, 1);
+$color-rgba-yellow-700: rgba(161, 98, 7, 1);
+$color-rgba-yellow-600: rgba(202, 138, 4, 1);
+$color-rgba-yellow-500: rgba(234, 179, 8, 1);
+$color-rgba-yellow-400: rgba(250, 204, 21, 1);
+$color-rgba-yellow-300: rgba(253, 224, 71, 1);
+$color-rgba-yellow-200: rgba(254, 240, 138, 1);
+$color-rgba-yellow-100: rgba(254, 249, 195, 1);
+$color-rgba-yellow-50: rgba(254, 252, 232, 1);
+// Shades of RGBA Blue
+$color-rgba-blue-950: rgba(23, 37, 84, 1);
+$color-rgba-blue-900: rgba(30, 58, 138, 1);
+$color-rgba-blue-800: rgba(30, 64, 175, 1);
+$color-rgba-blue-700: rgba(29, 78, 216, 1);
+$color-rgba-blue-600: rgba(37, 99, 235, 1);
+$color-rgba-blue-500: rgba(59, 130, 246, 1);
+$color-rgba-blue-400: rgba(96, 165, 250, 1);
+$color-rgba-blue-300: rgba(147, 197, 253, 1);
+$color-rgba-blue-200: rgba(191, 219, 254, 1);
+$color-rgba-blue-100: rgba(219, 234, 254, 1);
+$color-rgba-blue-50: rgba(239, 246, 255, 1);
+// Shades of RGBA Purple
+$color-rgba-purple-950: rgba(59, 7, 100, 1);
+$color-rgba-purple-900: rgba(88, 28, 135, 1);
+$color-rgba-purple-800: rgba(107, 33, 168, 1);
+$color-rgba-purple-700: rgba(126, 34, 206, 1);
+$color-rgba-purple-600: rgba(147, 51, 234, 1);
+$color-rgba-purple-500: rgba(168, 85, 247, 1);
+$color-rgba-purple-400: rgba(192, 132, 252, 1);
+$color-rgba-purple-300: rgba(216, 180, 254, 1);
+$color-rgba-purple-200: rgba(233, 213, 255, 1);
+$color-rgba-purple-100: rgba(243, 232, 255, 1);
+$color-rgba-purple-50: rgba(250, 245, 255, 1);
+
+$breakpoints-min-sm: 600px;
+$breakpoints-min-md: 905px;
+$breakpoints-min-lg: 1240px;
+$breakpoints-min-xl: 1497px;
+
+$transition-default: 1;
+
+// Mapped Tokens
+$siera-color-primary-xl: $color-rgba-orange-700;
+$siera-color-primary-lg: $color-rgba-orange-600;
+$siera-color-primary-md: $color-rgba-orange-500;
+$siera-color-primary-sm: $color-rgba-orange-400;
+$siera-color-primary-xs: $color-rgba-orange-300;
+$siera-color-primary-2xs: $color-rgba-orange-200;
+$siera-color-primary-3xs: $color-rgba-orange-100;
+$siera-color-cool-4xl: $color-rgba-slate-950;
+$siera-color-cool-3xl: $color-rgba-slate-900;
+$siera-color-cool-2xl: $color-rgba-slate-800;
+$siera-color-cool-xl: $color-rgba-slate-700;
+$siera-color-cool-lg: $color-rgba-slate-600;
+$siera-color-cool-md: $color-rgba-slate-500;
+$siera-color-cool-sm: $color-rgba-slate-400;
+$siera-color-cool-xs: $color-rgba-slate-300;
+$siera-color-cool-2xs: $color-rgba-slate-200;
+$siera-color-cool-3xs: $color-rgba-slate-100;
+$siera-color-cool-4xs: $color-rgba-slate-50;
+$siera-color-base-default: $color-rgba-base-white;
+$siera-color-base-inverse: $color-rgba-base-black;

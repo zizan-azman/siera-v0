@@ -1,0 +1,24 @@
+.custom-grid-layout {
+  margin: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+  @include media-min("sm") {
+    margin: 0 24px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 24px;
+  }
+  @include media-min("md") {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  @include media-min("lg") {
+    margin: 0 32px;
+    gap: 32px;
+  }
+  @include media-min("xl") {
+    margin: 0 auto;
+    grid-template-columns: repeat(12, 90px);
+    width: max-content;
+  }
+}
